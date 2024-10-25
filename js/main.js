@@ -13,3 +13,18 @@ const scoreboard = {
 }
 
 
+// Loop through Choices
+// Add Event Listeners for each choice
+choices.forEach(choice => choice.addEventListener('click', play));
+
+function play(e){
+
+    // Log ID of clicked element
+    console.log(e.target.id);
+
+}
+
+
+
+
+
