@@ -50,3 +50,19 @@
 
 }
 
+/* Style for Fade-In Animation */
+@keyframes modalopen {
+
+    from{
+
+        opacity: 0; /* Starts from 0 opacity */
+        
+    }
+
+    to{
+
+        opacity: 1; /* Ends with opacity 1 */
+
+    }
+
+}
