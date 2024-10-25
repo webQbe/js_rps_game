@@ -136,7 +136,7 @@ Here’s how it works:
 
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 even columns */
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #fff;
 
 }
@@ -175,5 +175,26 @@ Here’s how it works:
 .choice:hover{
 
     color: var(--primary-color);
+
+}
+
+
+/* Responsive Design */
+
+/* For screens with  width lower than 700px */
+@media(max-width: 700px){
+
+    .choice{
+        font-size: 60px;
+    }
+
+}
+
+/* For screens with  width lower than 500px */
+@media(max-width: 500px){
+
+    .choice{
+        font-size: 40px;
+    }
 
 }
