@@ -178,6 +178,20 @@ Here’s how it works:
 
 }
 
+/* Style Modal Heading */
+
+.text-win{
+
+    color: var(--win-color);
+
+}
+
+.text-lose{
+
+    color: var(--lose-color);
+
+}
+
 
 /* Responsive Design */
 
