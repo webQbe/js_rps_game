@@ -90,6 +90,9 @@ Here’s how it works:
 */
 
 
+
+/* Styling Restart Game Button */
+
 .restart-btn{
 
     display: none; /* Initially hidden */
@@ -111,6 +114,8 @@ Here’s how it works:
 }
 
 
+/* Styling Header */
+
 .header{
 
     text-align: center;
@@ -123,6 +128,9 @@ Here’s how it works:
     margin-bottom: 1rem;
 
 }
+
+
+/* Styling Score */
 
 .score{
 
@@ -142,5 +150,30 @@ Here’s how it works:
 .score p:last-child{
 
     background: var(--dark-color);
+
+}
+
+
+/* Styling Choices */
+
+.choices{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 even columns */
+    grid-gap: 2rem; /* Separate */
+    margin-top: 3rem; /* Push down */
+    text-align: center;
+
+}
+
+.choice{
+
+    cursor: pointer;
+
+}
+
+.choice:hover{
+
+    color: var(--primary-color);
 
 }
