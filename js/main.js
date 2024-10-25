@@ -19,6 +19,7 @@ choices.forEach(choice => choice.addEventListener('click', play));
 
 function play(e){
 
+   restart.style.display = 'inline-block';
    const playerChoice = e.target.id;
 
 }
