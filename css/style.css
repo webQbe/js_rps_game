@@ -48,11 +48,19 @@
 */
 
 body{
-    
+
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     background: #fff;
     color: #333;
 }
 
+.container{
 
+    max-width: 550px; /* To make responsive */
+    margin: auto; /* Move to middle */
+    overflow: hidden;
+    padding: 0 2rem; /* Left & Right padding */
+    text-align: center;
+
+}
