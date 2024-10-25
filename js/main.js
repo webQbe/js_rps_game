@@ -19,8 +19,7 @@ choices.forEach(choice => choice.addEventListener('click', play));
 
 function play(e){
 
-    // Log ID of clicked element
-    console.log(e.target.id);
+   const playerChoice = e.target.id;
 
 }
 
