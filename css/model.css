@@ -9,7 +9,7 @@
 
 .modal{
 
-   /*  display: none;  /* Initially hidden  */ 
+    display: none;  /* Initially hidden  */ 
     position: fixed; 
     z-index: 1; /* On top of other elements */
     left: 0; 
@@ -56,7 +56,7 @@
     from{
         
         opacity: 0; /* Starts from 0 opacity */
-        
+
     }
 
     to{
