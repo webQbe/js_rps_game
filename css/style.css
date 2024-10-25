@@ -47,6 +47,7 @@
 
 */
 
+
 body{
 
     font-family: 'Roboto', sans-serif;
@@ -62,5 +63,25 @@ body{
     overflow: hidden;
     padding: 0 2rem; /* Left & Right padding */
     text-align: center;
+
+}
+
+.restart-btn{
+
+    display: inline-flex; /* Initially hidden */
+    background: var(--light-color); /* Add from variable */
+    color: #333;
+    padding: 0.4rem 1.3rem ; /* Top-Bottom & Left-Right */
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+
+}
+
+.restart-btn:hover{
+
+    background: var(--primary-color);
+    color: #fff;
 
 }
