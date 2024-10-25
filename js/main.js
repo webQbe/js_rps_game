@@ -28,8 +28,12 @@ function play(e){
    // Get computer's choice
    const computerChoice = getComputerChoice();
 
-   // Log playerChoice & computerChoice
-   console.log(playerChoice, computerChoice);
+   // Get Winner
+   const winner = getWinner(playerChoice, computerChoice);
+
+   // Log choices & winner
+   console.log(playerChoice, computerChoice, winner);
+
 
 }
 
@@ -52,6 +56,57 @@ function getComputerChoice(){
 
         return 'scissors';
     }
+
+}
+
+// Decide Winner
+// p - playerChoice & c - computerChoice
+function getWinner(p, c){
+
+    if(p === c){
+
+        // When both have the same choice
+        return 'draw'
+
+    } else if(p === 'rock'){
+
+        if(c === 'paper'){
+
+            // Computer Wins
+            return 'computer'
+
+        } else {
+
+            // Player Wins
+            return 'player'
+
+        }
+
+    } else if(p === 'paper'){
+
+        if(c === 'scissors'){
+
+            return 'computer';
+
+        } else {
+
+            return 'player';
+
+        }
+
+    } else if(p === 'scissors'){
+
+        if(c === 'rock'){
+
+            return 'computer';
+
+        } else {
+
+            return 'player';
+
+        }
+
+    } 
 
 }
 
