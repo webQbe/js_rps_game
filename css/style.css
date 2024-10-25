@@ -1,0 +1,17 @@
+/* Load Roboto Font */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+/* Variables with CSS Custom Properties */
+:root {
+
+    /* Root Scope */
+    --primary-color: #003699;
+    --dark-color: #333333;
+    --light-color: #f4f4f4;
+    --lose-color: #dc3545; /* Color when lost */
+    --win-color: #28a745; /* Color when won */
+    --modal-duration: 1s;  /* Amount of time modal takes to open */
+
+}
+
