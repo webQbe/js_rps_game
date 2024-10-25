@@ -66,6 +66,30 @@ body{
 
 }
 
+/* Why Use rem?
+
+Using rem is helpful for responsive design, as it enables you to adjust 
+the entire document's scale by changing just the root font size. 
+
+It also provides greater consistency across different elements compared 
+to using em, which is relative to the parent element’s font size.
+
+In CSS, rem stands for “root em” and is a unit of measurement relative to 
+the font size of the root element (<html>). 
+
+Here’s how it works:
+
+    1 rem equals the font size of the root (<html>) element.
+
+    If the root font size is set to 16px (the default in most browsers), 
+    then 1 rem equals 16px.
+
+    All elements using rem units will scale relative to the root font size, 
+    providing consistency and easy scaling throughout your design.
+
+*/
+
+
 .restart-btn{
 
     display: none; /* Initially hidden */
@@ -97,5 +121,26 @@ body{
 .header h1{
 
     margin-bottom: 1rem;
+
+}
+
+.score{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 even columns */
+    font-size: 1.2rem;
+    color: #fff;
+
+}
+
+.score p:first-child{
+
+    background: var(--primary-color);
+
+}
+
+.score p:last-child{
+
+    background: var(--dark-color);
 
 }
