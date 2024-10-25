@@ -15,3 +15,36 @@
 
 }
 
+
+/* Simple Reset */
+
+* {
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+/* CSS reset explanation:
+
+    This considered a "CSS reset" or "CSS normalization." 
+    
+    It aims to remove default padding, margin, and box-sizing inconsistencies 
+    across browsers. Here's a breakdown of each rule:
+
+    * (Universal Selector): 
+    Applies the rules to all elements.
+
+    box-sizing: border-box;: 
+    Ensures padding and borders are included within the element's 
+    specified width and height, making layout calculations more 
+    predictable.
+
+    padding: 0; and margin: 0;: 
+    Removes any default padding and margin applied 
+    by the browser, preventing unwanted spacing.
+
+*/
+
+
