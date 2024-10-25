@@ -1,0 +1,13 @@
+.modal{
+
+   /*  display: none;  /* Initially hidden  */ 
+    position: fixed; 
+    z-index: 1; /* On top of other elements */
+    left: 0; 
+    top: 0; /* Start at top-left corner */
+    height: 100%; 
+    width: 100%;/* Take entire height & width */
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.5); /* opacity = 0.5 */
+
+}
