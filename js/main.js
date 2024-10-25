@@ -19,8 +19,39 @@ choices.forEach(choice => choice.addEventListener('click', play));
 
 function play(e){
 
+   // Display Restart Game button
    restart.style.display = 'inline-block';
+
+   // Get user's choice
    const playerChoice = e.target.id;
+
+   // Get computer's choice
+   const computerChoice = getComputerChoice();
+
+   // Log playerChoice & computerChoice
+   console.log(playerChoice, computerChoice);
+
+}
+
+// Generate computer's choice
+function getComputerChoice(){
+
+    // Generate Random Decimal Number
+    const rand = Math.random();
+
+    // Return rock, paper, scissors based on rand value
+    if(rand < 0.34){
+
+        return 'rock';
+
+    } else if (rand <= 0.67) {
+
+        return 'paper';
+
+    } else {
+
+        return 'scissors';
+    }
 
 }
 
