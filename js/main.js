@@ -31,8 +31,9 @@ function play(e){
    // Get Winner
    const winner = getWinner(playerChoice, computerChoice);
 
-   // Log choices & winner
-   console.log(playerChoice, computerChoice, winner);
+   // Display winner
+   showWinner(winner, computerChoice);
+   
 
 
 }
@@ -107,6 +108,54 @@ function getWinner(p, c){
         }
 
     } 
+
+}
+
+// Display Winner
+function showWinner(winner, computerChoice){
+
+    if(winner === 'player'){
+
+        // Increment Player Score
+        scoreboard.player++
+
+        // Output result to modal with choice icon
+        result.innerHTML = `
+            <h1 class="text-win">You Win!</h1>
+            <i class="fas fa-hand-${computerChoice} fa-10x"></i>
+            <p>Computer chose <strong>${computerChoice}</strong></p>
+        `;
+
+    } else if(winner === 'computer'){
+
+        // Increment Computer Score
+        scoreboard.computer++
+
+        result.innerHTML = `
+            <h1 class="text-lose">You Lose!</h1>
+            <i class="fas fa-hand-${computerChoice} fa-10x"></i>
+            <p>Computer chose <strong>${computerChoice}</strong></p>
+        `;
+
+    } else {
+
+         result.innerHTML = `
+         <h1>It's A Draw!</h1>
+         <i class="fas fa-hand-${computerChoice} fa-10x"></i>
+         <p>Computer chose <strong>${computerChoice}</strong></p>
+     `;
+
+    }
+
+    // Display Score
+    score.innerHTML = `
+            <p>Player: ${scoreboard.player}</p>
+            <p>Computer: ${scoreboard.computer}</p>
+            `;
+
+
+    // Unhide Modal
+    modal.style.display = 'block';
 
 }
 
