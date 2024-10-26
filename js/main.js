@@ -131,10 +131,12 @@ function showWinner(winner, computerChoice){
         scoreboard.player++
 
         // Output result to modal with choice icon
+        // Uppercase First Character of Computer Choice 
+        // Add second to last characters to uppercased first
         result.innerHTML = `
             <h1 class="text-win">You Win!</h1>
             <i class="fas fa-hand-${computerChoice} fa-10x"></i>
-            <p>Computer chose <strong>${computerChoice}</strong></p>
+            <p>Computer chose <strong>${computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)}</strong></p>
         `;
 
     } else if(winner === 'computer'){
@@ -145,7 +147,7 @@ function showWinner(winner, computerChoice){
         result.innerHTML = `
             <h1 class="text-lose">You Lose!</h1>
             <i class="fas fa-hand-${computerChoice} fa-10x"></i>
-            <p>Computer chose <strong>${computerChoice}</strong></p>
+            <p>Computer chose <strong>${computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)}</strong></p>
         `;
 
     } else {
@@ -153,7 +155,7 @@ function showWinner(winner, computerChoice){
          result.innerHTML = `
          <h1>It's A Draw!</h1>
          <i class="fas fa-hand-${computerChoice} fa-10x"></i>
-         <p>Computer chose <strong>${computerChoice}</strong></p>
+         <p>Computer chose <strong>${computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)}</strong></p>
      `;
 
     }
