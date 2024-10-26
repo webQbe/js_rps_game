@@ -12,10 +12,31 @@ const scoreboard = {
     computer: 0
 }
 
+/* EVENT LISTENERS */
 
-// Loop through Choices
 // Add Event Listeners for each choice
+// Loop through Choices
 choices.forEach(choice => choice.addEventListener('click', play));
+
+// Listen for clicks on browser window
+window.addEventListener('click', closeModal);
+
+// Close Modal
+function closeModal(e){
+
+    // Check where user clicked
+    if(e.target == modal){
+
+        // If area between div.modal and div#result is clicked
+        modal.style.display = 'none';
+
+    }
+
+}
+
+
+
+
 
 function play(e){
 
