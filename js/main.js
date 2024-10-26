@@ -21,18 +21,8 @@ choices.forEach(choice => choice.addEventListener('click', play));
 // Listen for clicks on browser window
 window.addEventListener('click', closeModal);
 
-// Close Modal
-function closeModal(e){
-
-    // Check where user clicked
-    if(e.target == modal){
-
-        // If area between div.modal and div#result is clicked
-        modal.style.display = 'none';
-
-    }
-
-}
+// Listen for Restart button
+restart.addEventListener('click', restartGame);
 
 
 
@@ -180,6 +170,34 @@ function showWinner(winner, computerChoice){
 
 }
 
+// Close Modal
+function closeModal(e){
+
+    // Check where user clicked
+    if(e.target == modal){
+
+        // If area between div.modal and div#result is clicked
+        modal.style.display = 'none';
+
+    }
+
+}
+
+
+// Restart Game
+function restartGame(){
+
+    // Set scores to 0
+    scoreboard.player = 0;
+    scoreboard.computer = 0;
+    
+    // Update scores on UI
+    score.innerHTML = `
+        <p>Player: 0</p>
+        <p>Computer: 0</p>
+    `;
+
+}
 
 
 
